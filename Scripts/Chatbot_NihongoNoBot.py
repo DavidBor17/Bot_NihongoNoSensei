@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
-
 
 # Libraries 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
@@ -120,7 +118,7 @@ def join(update, context):
     cursor.execute("insert into club values('{}')".format(chat_id))
     cursor.commit()
     
-    
+# Leave the learn team    
 def leave(update, context):
     
     # Send leave message
@@ -196,10 +194,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# In[ ]:
-
-
-
-
