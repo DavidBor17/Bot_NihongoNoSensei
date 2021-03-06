@@ -50,7 +50,7 @@ sql_query = pd.read_sql_query('select distinct ids from club',cnxn)
 # Create a log
 count = 0
 
-# bot.config['api_key'] = token
+bot.config['api_key'] = token
 # Send the message
 for i in range(len(sql_query)):
     bot.send_message(chat_id = str(sql_query.ids[i]), text = teach_full)
