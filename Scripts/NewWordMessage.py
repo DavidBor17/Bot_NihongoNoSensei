@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
 
 # NewWordUpdate.py Send a message with a new word
+
+#Libraries
 import pandas as pd
 import telebot
 import xlrd
@@ -59,4 +59,3 @@ for i in range(len(sql_query)):
 # Creating a log, how many people got the word
 cursor.execute("update teach_logs set numb = '{}' where date = '{}' ".format(str(count),dt_string))
 cursor.commit()
-
