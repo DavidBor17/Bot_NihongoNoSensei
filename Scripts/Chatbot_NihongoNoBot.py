@@ -102,8 +102,8 @@ def teachme(update, context):
 
     # Teach a random word   
     rand = random.randint(0,len(teach_voc))
-    teach_1 = 'Let´s learn a new word!.\n'
-    teach_2 = 'Kanji: {}, Hiragana: {}, Romanji: {}, Meaning: {}'.format(teach_voc.iloc[rand][3],teach_voc.iloc[rand][4],teach_voc.iloc[rand][6],teach_voc.iloc[rand][5])
+    teach_1 = 'Let´s learn vocabulary!.\n'
+    teach_2 = 'Word: {}, Hiragana: {}, Romanji: {}, Meaning: {}'.format(teach_voc.iloc[rand][3],teach_voc.iloc[rand][4],teach_voc.iloc[rand][6],teach_voc.iloc[rand][5])
     teach_full = teach_1 + teach_2
     update.message.reply_text(teach_full)
 
