@@ -1,6 +1,6 @@
 # Telegram Bot: NihongoNoSensei
 
-The purpose of this project is to learn and translate Japanese through a Telegram bot using Python. 
+The purpose of this project is to learn and translate Japanese through a Telegram bot using Python. Link: https://t.me/NihongoSenseiBot
 
 Libraries used:
 * telegram.ext
